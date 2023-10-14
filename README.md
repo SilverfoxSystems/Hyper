@@ -1,6 +1,6 @@
 # Hyper
 Hyper(-precision) type is a new version of Broadlibrary(https://github.com/SilverfoxSystems/BroadLib) with corrections, optimizations and method descriptions.
-It can be used like any other numeric data type.  But at this point on the basic calculations are available, including Mod and '\' operators.
+It can be used like any other numeric data type.  But at this point on the basic calculations are available, including _Mod_ and \ operators.
 
 Besides ones mentioned in BroadLib,
 - The ToString method also prints out the value in pure decimal format (by default).
