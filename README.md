@@ -1,5 +1,5 @@
 # Hyper
-Hyper(-precision) type is a new version of Broadlibrary(https://github.com/SilverfoxSystems/BroadLib) with corrections, optimizations and method descriptions.
+Hyper (-precision) type is a new version of Broad library (https://github.com/SilverfoxSystems/BroadLib) with corrections, optimizations and method descriptions.
 It can be used like any other numeric data type.  But at this point on the basic calculations are available, including _Mod_ and \ operators.
 
 Besides ones mentioned in BroadLib,
