@@ -35,8 +35,7 @@ I currently don't have the time to develop other mathematical functions like squ
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
-
 On this GitHub repo, it's only shown how to override the NewFromString function in order to write a functional one.
-The repo doesn't contain the dll files required for it to run. Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files.
+### This repo doesn't contain the dll files required for it to run. Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files.
 
 If you have any questions or you want to collaborate in any way, you are welcome to contact me or write in discussion.
