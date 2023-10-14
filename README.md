@@ -29,13 +29,6 @@ I'm not going to continue debugging NewFromString myself because, well, I don't 
 The Default Property is _DigitAt(exp64%)_, digit refers to a 64-bit value.
 i.e. The statement `h1(7) = 1234` automatically resizes _h1_'s buffer and increases it's highest exponent64 if it's out of range.  Same goes for the negative values and exponents64 below h1's lowest.
 
-type="text/css"
-
-<style>div{font-size:'x-large'}</style>
-
-<div>
- hjhjh
-</div>
 I currently don't have the time to develop other mathematical functions like square root and such. I haven't thought it out yet, how to elegantly solve for sqrt.
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
