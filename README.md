@@ -12,7 +12,7 @@ The only thing that doesn't work is conversion from a decimal string.
 but you can use other ways to input numbers, for example:
 to get the value of 0.125 into a Hyper, use
 
-Dim h1 as New Hyper(0, -1) 'same as New Hyper(-1, 0), doesn't matter in which order exponents are passed. Both exponents(lowest and highest) can be positive or negative.
+`Dim h1 as New Hyper(0, -1)` is the same as `New Hyper(-1, 0)`, it doesn't matter in which order exponents are passed. Both exponents (lowest and highest) can be positive or negative.
 h1(0) = 125
 h1 /= 1000  
 '/// or   r& = h1.Divide(1000, precision)
