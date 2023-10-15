@@ -36,4 +36,4 @@ The code of the managed library is not available on GitHub anymore but you can r
 On this GitHub repo, it's only shown how to override the NewFromString function in order to write a functional one.
 ### This repo doesn't contain the dll files required for it to run. Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files.
 
-If you have any questions or you want to collaborate in any way, you are welcome to contact me or write in discussion.
+If you have any questions or you want to contribute in any way, you are welcome to contact me or write in discussion.
