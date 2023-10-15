@@ -10,28 +10,27 @@ Besides ones mentioned in BroadLib,
 
 The only thing that doesn't work is conversion from a decimal string.
 but you can use other ways to input numbers, for example:
-to get the value of 0.125 into a Hyper, use
+to get the value of **0.125** into a _Hyper_, use
 
 ```
+Dim h1 as New Hyper(0, 0) ' initialize an integer (with buffer length of 8 bytes), of course, it is wiser to adjust the lowet exponent here, in order to avoid resizing of the buffer when performing divide operation. In this case, you would, for instance, write `New Hyper(0, -4)` to reserve 4 * 64 bits for the value after decimal point. 
+
 h1(0) = 125
-h1 /= 1000  
+h1 /= 1000  ' Buffer automatically resizes so that it fits the QuotientPrecision (Shared Integer)
 '/// or   r& = h1.Divide(1000, precision)
 '/// r = the returned remainder , precision = -exp64 , lowest exponent = (2^64)^exp64
 ```
 
+
+
 The number of 64-bit digits used in the result of Divide operation can be set by using **QuotientPrecision**.
 
-All operations (+, -, *), except Divide, can have **Hyper** type as the second argument. Division by Int64 is only supported.
+All operations (+, -, *), except Divide, can have **Hyper** type for the second argument. Division by Int64 is only supported.
 
  `Dim h1 as New Hyper(0, -1)` is the same as `New Hyper(-1, 0)`, it doesn't matter in which order exponents are passed. Both exponents (lowest and highest) can be positive or negative.
 
-I'm not going to continue debugging NewFromString myself because, well, I don't need it in mmy other projects... I don't even need the decimal ToString method, I only made it to show off :)
-
-
 The Default Property is _DigitAt(exp64%)_, digit refers to a 64-bit value.
 i.e. The statement `h1(7) = 1234` automatically resizes _h1_'s buffer and increases it's highest exponent64 if it's out of range.  Same goes for the negative values and exponents64 below h1's lowest.
-
-I currently don't have the time to develop other mathematical functions like square root and such. I haven't thought it out yet, how to elegantly solve for sqrt.
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
