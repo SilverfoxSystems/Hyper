@@ -20,6 +20,7 @@ h1 /= 1000
 ```
 
 The number of 64-bit digits used in the result of Divide operation can be set by using **QuotientPrecision**.
+
 All operations (+, -, *), except Divide, can have **Hyper** type as the second argument. Division by Int64 is only supported.
 
  `Dim h1 as New Hyper(0, -1)` is the same as `New Hyper(-1, 0)`, it doesn't matter in which order exponents are passed. Both exponents (lowest and highest) can be positive or negative.
