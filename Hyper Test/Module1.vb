@@ -19,15 +19,14 @@ Module Module1
         Next
 
         Hyper.maxDigitsInString = 255 'this number gets aligned to a multiple of 18 in the decimal ToString method's output 
-        Console.WriteLine(c)
-        Console.WriteLine()
+        Console.WriteLine(c) : Console.WriteLine()
+
         Console.WriteLine(a)
-        Console.WriteLine(a * c)
-        Console.WriteLine()
+        Console.WriteLine(a * c) : Console.WriteLine()
 
         Console.WriteLine(b)
-        Console.WriteLine(b * c)
-        Console.WriteLine()
+        Console.WriteLine(b * c) : Console.WriteLine()
+
         Console.WriteLine(a * b)
         Console.WriteLine(a * b * c)
 
@@ -53,7 +52,7 @@ End Module
 Class HyperM
  Inherits Hyper
 
-
+'This class occasionaly works, you can rewrite whole of it, I think this would be one of the fastest ways
  Const TenPow18& = 10 ^ 18
 
  Sub New()
@@ -163,7 +162,7 @@ Class HyperM
    GoTo bothAbove
   End If
 
-  ' here, the decimal point is somewhere in the middle of string
+  ' here, the decimal point is somewhere in the middle of string, probably this procedure won't work:
 
 
   curr = midPt - 1 ' endChar
