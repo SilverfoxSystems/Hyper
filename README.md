@@ -35,6 +35,7 @@ i.e. The statement `h1(7) = 1234` automatically resizes _h1_'s buffer and increa
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
 On this GitHub repo, it's only shown how to override the NewFromString function in order to write a functional one.
-### This repo doesn't contain the dll files required for it to run. Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files.
+### This repo doesn't contain the dll files required for it to run. 
+**Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files. Or, if you prefer a secure connection(https), you can accomplish the same here -> https://iz.azurewebsites.net/hyper/**
 
 If you have any questions or you want to contribute in any way, you are welcome to contact me or write in discussion.
