@@ -7,7 +7,7 @@ Module Module1
     Dim a As New Hyper(5, 0) ' initialize an integer with 6 * 64 bits
         Dim b As New Hyper(-1, -4) ' float with 4 * 64 bits
         a(5) = 50000 : a(3) = 50000 ' this is 50000*(2^64)^5 + 50000*(2^64)^3
-        b(-1) = -50000 : b(-3) = 50000 ' = 50000*(2^64)^(-1) + 50000*(2^64)^(-3)
+        b(-1) = -50000 : b(-3) = 50000 ' = -50000*(2^64)^(-1) + 50000*(2^64)^(-3)
 
         Dim precision% = 914 'we need high precision since we're dividing with a multiple of 5, which results in a repetitive non-integral value in binary system
         Dim c As New Hyper(0, -precision)
