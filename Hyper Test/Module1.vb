@@ -3,8 +3,22 @@
 
 Module Module1
 
- Sub Main()
-    Dim a As New Hyper(5, 0) ' initialize an integer with 6 * 64 bits
+    Sub Main()
+
+        Hyper.maxDigitsInString = 100 'this number gets aligned to a multiple of 18 in the decimal ToString method's output 
+        Hyper.ExtraDigitsForConversionFromDecimal = 50 ' reserve 50 * 64bits extra space for calculation - some values in decimal require higher precision during the conversion
+        ' The integral part size (when inputting from string) is currently limited to maximum of 18 characters, use subsequent multiplication to get larger values
+        Dim a As New Hyper("-123456789012345678.9012345678901234567890123456789012345678901234567890")
+        Dim b As New Hyper(".000000000000000000000000000000000000000000000000000000000000001")
+        Console.WriteLine(a) : Console.WriteLine()
+        Console.WriteLine(b) : Console.WriteLine()
+        Console.WriteLine(a * b) : Console.WriteLine()
+        Console.ReadKey()
+
+    End Sub
+
+    Sub oldExample()
+        Dim a As New Hyper(5, 0) ' initialize an integer with 6 * 64 bits
         Dim b As New Hyper(-1, -4) ' float with 4 * 64 bits
         a(5) = 50000 : a(3) = 50000 ' this is 50000*(2^64)^5 + 50000*(2^64)^3
         b(-1) = -50000 : b(-3) = 50000 ' = -50000*(2^64)^(-1) + 50000*(2^64)^(-3)
