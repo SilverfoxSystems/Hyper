@@ -10,10 +10,13 @@ Module Module1
         ' The integral part size (when inputting from string) is currently limited to maximum of 18 characters, use subsequent multiplication to get larger values
         Dim a As New Hyper("-123456789012345678.9012345678901234567890123456789012345678901234567890")
         Dim b As New Hyper(".000000000000000000000000000000000000000000000000000000000000001")
+        'Hyper.displayMode = Hyper.displayModeType.inHex ' use any other evaluation method than pure decimal when working with extremely large values to avoid wasting time for conversion to decimal 
+
         Console.WriteLine(a) : Console.WriteLine()
         Console.WriteLine(b) : Console.WriteLine()
         Console.WriteLine(a * b) : Console.WriteLine()
         Console.ReadKey()
+
 
     End Sub
 
