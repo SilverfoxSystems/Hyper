@@ -1,4 +1,4 @@
-﻿Imports HyperLib 'The reference is not available by default, you need to download and add the library, as described in the readme file on GitHub.
+﻿Imports HyperLib 'The reference is not available by default, you need to download and add the library, as described in the readme file on GitHub(https://github.com/SilverfoxSystems/Hyper/).
 
 Module Module1
 
