@@ -9,13 +9,7 @@ Besides ones mentioned in BroadLib,
 - The buffer gets resized according to the lowest and the highest exponent
 - Comparison operators (<, >, ...) should also work now.
 
-
 All operations (+, -, *), except Divide, can have **Hyper** type for the second argument. Division by Int64 is only supported.
-
- `Dim h1 as New Hyper(0, -1)` is the same as `New Hyper(-1, 0)`, it doesn't matter in which order exponents are passed. Both exponents (lowest and highest) can be positive or negative.
-
-The Default Property is _DigitAt(exp64%)_, digit refers to a 64-bit value.
-i.e. The statement `h1(7) = 1234` automatically resizes _h1_'s buffer and increases it's highest exponent64 if it's out of range.  Same goes for the negative values and exponents64 below h1's lowest.
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
