@@ -9,7 +9,7 @@ Besides ones mentioned in BroadLib,
 - The buffer gets resized according to the lowest and the highest exponent
 - Comparison operators (<, >, ...) should also work now.
 
-All operations (+, -, *), except Divide, can have **Hyper** type for the second argument. Division by Int64 is only supported.
+All operations (+, -, *), except Divide, can have **Hyper** type as the second operand. Division by Int64 is only supported.
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
