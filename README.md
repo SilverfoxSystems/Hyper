@@ -13,7 +13,6 @@ All operations (+, -, *), except Divide, can have **Hyper** type as the second o
 
 The code of the managed library is not available on GitHub anymore but you can refer to the old project, the principle remains the same.
 
-### This repo doesn't contain the dll files required for it to run. 
-**Follow the instructions here http://silverfox.systems/Hyper/ to download and include the needed files. Or, if you prefer a secure connection(https), you can accomplish the same here -> https://iz.azurewebsites.net/hyper/**
+**Install the extension here http://silverfox.systems/Hyper/ . Or, if you prefer a secure connection(https), you can accomplish the same here -> https://iz.azurewebsites.net/hyper/ or https://marketplace.visualstudio.com/items?itemName=SilverfoxSystems0.Hyper**
 
 If you have any questions or you want to contribute in any way, you are welcome to contact me or write in discussion.
